@@ -1,7 +1,7 @@
 package academy.devdojo.maratonajava.introducao;
 
 public class Aula05EstruturasCondicionais06 {
-    static void main() {
+    static void main(String[] args) {
         // Utilizando switch, dados os valores de 1 a 7, imprima se é dia útil ou final de semana
         // Considerando 1 como domingo
         byte dia = 8;
