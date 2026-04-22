@@ -1,9 +1,10 @@
 package academy.devdojo.maratonajava.javacore.Bintrucaoclasses.dominio;
 
 public class Funcionario {
-    public String nome;
-    public int idade;
-    public double[] salario;
+    private String nome;
+    private int idade;
+    private double[] salario;
+    private double soma;
 
 
     public void imprimir(Funcionario funcionario) {
@@ -21,7 +22,6 @@ public class Funcionario {
     }
 
     public void imprimirMediaSalario(double... array) {
-        double soma = 0;
         if (array == null) {
             return;
         }
@@ -30,8 +30,32 @@ public class Funcionario {
         }
 
 
-        System.out.println("Média salarial " + (soma / array.length));
+        System.out.println("Média salarial " + (this.soma / array.length));
 
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public double[] getSalario() {
+        return salario;
+    }
+
+    public void setSalario(double[] salario) {
+        this.salario = salario;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
     }
 
 }
